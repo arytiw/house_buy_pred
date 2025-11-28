@@ -79,9 +79,9 @@ if st.button("Predict"):
     sufficient_down_payment = down_payment >= (price * 0.20)
 
     if affordable_tenure and low_expenses and sufficient_down_payment:
-        st.success("🎯 The buyer has a strong financial profile — Likely to Purchase!")
+        st.success("The buyer has a strong financial profile — Likely to Purchase!")
     else:
         if pred == 1:
-            st.success("🎉 The buyer is LIKELY to purchase this property!")
+            st.success("The buyer is LIKELY to purchase this property!")
         else:
-            st.error("❌ The buyer is NOT likely to purchase this property.")
+            st.error("The buyer is NOT likely to purchase this property.")
