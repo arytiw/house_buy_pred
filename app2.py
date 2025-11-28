@@ -70,8 +70,6 @@ if st.button("Predict"):
     proba = model.predict_proba(input_df)[0][1]
     pred = model.predict(input_df)[0]
 
-    st.subheader("📌 Prediction Result")
-    st.metric("Estimated Purchase Probability", f"{proba*100:.2f}%")
 
     # Financial Rule Override (based on dataset pattern)
     affordable_tenure = loan_tenure_years <= 20
