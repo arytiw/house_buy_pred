@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load SVM pipeline
-model = joblib.load("artifacts/svm_pipeline.pkl")
+model = joblib.load("svm_pipeline.pkl")
 
 st.set_page_config(page_title=" Buyer Purchase Decision", layout="wide")
 st.title("Real Estate Purchase Decision Prediction")
